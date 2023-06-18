@@ -22,9 +22,9 @@ public class Main {
         TeacherController controller = new TeacherController(service);
         TeacherView view = new TeacherView(controller);
 
-        view.create("Andrei Andrei", 55, "02", "5");
-        view.create("Elena Elena", 45, "03", "5");
-        view.create("Maria Maria", 20, "112", "2");
+        view.create("Иванов Иван Иванович", 28, "89511111757", "5");
+        view.create("Сидоров Сидор Сидорович", 59, "899525879", "5");
+        view.create("Леонидов Леонид Леонидович", 37, "89514567892", "2");
         view.sendOnConsole(SortType.NONE);
 
         StudentsRepository studentsRepository = new StudentsRepository();
@@ -32,9 +32,9 @@ public class Main {
         StudentController studentController = new StudentController(studentService);
         StudentView studentView = new StudentView(studentController);
 
-        studentView.create("Ivan Morozov", 18, "02", "2");
-        studentView.create("Petr Vorobev", 19, "03", "5");
-        studentView.create("Sidor Sidorov", 20, "112","5");
+        studentView.create("Федоров Федор Федорович", 39, "89984456555", "2");
+        studentView.create("Петров Петр Петрович", 18, "89564444425", "5");
+        studentView.create("Сергеев Сергей Сергеевич", 26, "89756231444","5");
         studentView.sendOnConsole(SortType.NONE);
 
         StudyGroup group = new StudyGroup("5");
